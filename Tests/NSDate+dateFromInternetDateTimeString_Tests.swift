@@ -30,7 +30,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "Sun, 19 May 2002 15:21:36 GMT"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -53,8 +53,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "Sun, 19 May 2002 15:21 GMT"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
-        {
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString){
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
             XCTAssert(dateComponent.weekday == 1, "")
@@ -76,7 +75,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "Sun, 19 May 2002 15:21:36"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -98,7 +97,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "Sun, 19 May 2002 15:21"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -120,7 +119,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "19 May 2002 15:21:36 GMT"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -142,7 +141,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "19 May 2002 15:21 GMT"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -164,7 +163,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "19 May 2002 15:21:36"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -185,7 +184,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "19 May 2002 15:21"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -210,7 +209,7 @@ class NSDateExtension_Tests: XCTestCase {
         let timeZone = NSTimeZone(forSecondsFromGMT: -60*60*8)
         calendar.timeZone = timeZone
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
@@ -234,7 +233,7 @@ class NSDateExtension_Tests: XCTestCase {
         let timeZone = NSTimeZone(forSecondsFromGMT: 60*60*2)
         calendar.timeZone = timeZone
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
@@ -257,7 +256,7 @@ class NSDateExtension_Tests: XCTestCase {
         
         let dateString = "1937-01-01T12:00:27"
         
-        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)?
+        if let date: NSDate = NSDate.dateFromInternetDateTimeString(dateString)
         {
             var dateComponent = calendar.components(calendar_flags, fromDate: date)
             
